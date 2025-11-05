@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos JavaScript</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <h1>Exemplo 1</h1>
+
+  <!-- Pegando o título da página e escrevendo na tela -->
+  <h2>Pegando o título da página e escrevendo na tela:</h2>
+  <p id="titulo"></p>
+
+  <script>
+    // Pegando o título da página e escrevendo na tela
+    document.getElementById("titulo").innerHTML = document.title;
+  </script>
+
+
+  <!-- Testando Eventos com botões -->
+  <h2>Testando Eventos com botões:</h2>
+  <button onclick="mensagem1()">Clique aqui</button>
+  <button ondblclick="mensagem2()">Clique duas vezes</button>
+
+  <script>
+    function mensagem1() {
+      alert("Você clicou no botão!");
+    }
+
+    function mensagem2() {
+      alert("Você clicou duas vezes!");
+    }
+  </script>
+
+
+  <!-- Testando Funções nos botões -->
+  <h2>Testando Funções nos botões:</h2>
+  <button onclick="somar()">Somar 10 + 20</button>
+  <p id="resultadoSoma"></p>
+
+  <script>
+    function somar() {
+      var x = 10;
+      var y = 20;
+      var soma = x + y;
+      document.getElementById("resultadoSoma").innerHTML = "O resultado da soma é: " + soma;
+    }
+  </script>
+
+
+  <!-- Testando variáveis em JavaScript -->
+  <h2>Testando variáveis em JavaScript:</h2>
+  <p id="variaveis"></p>
+
+  <script>
+    var nome = "Maria";
+    var idade = 25;
+    var curso = "Análise e Desenvolvimento de Sistemas";
+
+    document.getElementById("variaveis").innerHTML =
+      "Nome: " + nome + "<br>Idade: " + idade + "<br>Curso: " + curso;
+  </script>
+
+
+  <!-- Outro Exemplo -->
+  <h2>Outro Exemplo:</h2>
+  <button onclick="mostrarMensagem()">Mostrar mensagem</button>
+  <p id="mensagem"></p>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").innerHTML = "Olá! Este é outro exemplo de uso do JavaScript.";
+    }
+  </script>
+
+</body>
+</html>
+
+
